@@ -1,0 +1,27 @@
+
+.img-fluid{
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+
+.card-title{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 100px;
+    font-family: 'Brush Script MT', cursive;
+    color: #7FB3D5 ;
+}
+   
+.container{
+    background-image: url(src\assets\flores_inicio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:60px;
+    padding-bottom:60px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    
+}
+  
