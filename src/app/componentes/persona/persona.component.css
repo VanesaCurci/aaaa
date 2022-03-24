@@ -23,3 +23,9 @@
 h1{
     padding-top:40px
 }
+ul{
+    padding-top: 100px;
+}
+li{
+    list-style-type: none;
+}

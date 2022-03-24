@@ -4,9 +4,16 @@
     <div class="card-img-overlay">
        <img class="img-fluid rounded-circle" src="./assets/profile.jpg" alt="perfil" >
     </div>
-    <h1>Vanesa Curci</h1>
-    <h2>Capital,Mendoza</h2>
-    <h2>23 años</h2>
+    <ul *ngFor="let persona of personas">
+      <li >
+        
+          <h1>{{persona.nombre}}</h1>
+          <h2>{{persona.apellido}}</h2>
+          <h2>{{persona.edad}}</h2>
+      </li>
+    </ul>
+    
+    
   </div>
 </div>
     
