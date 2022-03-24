@@ -46,7 +46,9 @@ img {
 }
 
 
-
 .fa:hover {
     opacity: 0.6;
+}
+.fa-plus{
+ margin-left: 1000px;
 }

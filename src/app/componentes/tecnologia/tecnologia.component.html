@@ -1,7 +1,8 @@
 <div class="container">
     <div class="card" >
       <h1>Tecnologías</h1>
-      <i class="fa fa-plus"></i>
+      <i class="fa fa-plus" (click)="add()"></i>
+      
         <h2 class="card-body">
           <ul  *ngFor = "let tecnologia of tecnologias" >
             <li class="card-title">

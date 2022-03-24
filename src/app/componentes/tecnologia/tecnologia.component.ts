@@ -26,9 +26,13 @@ export class TecnologiaComponent implements OnInit {
     this.tecnologias = this.tecnologias.filter(t => t !== tecnologia);
     this.tecnologiaService.deleteTecnologia(tecnologia.id).subscribe();
   }
- 
 
+  
 edit(){
-this.router.navigate(['addtecno'])
+this.router.navigate(['edittecno'])
+}
+
+add(){
+  this.router.navigate(['addtecno'])
 }
 }

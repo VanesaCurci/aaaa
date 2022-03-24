@@ -1,1 +1,27 @@
-<p>addtecno works!</p>
+
+  <div class="container">
+      <h1>Tecnologia Form</h1>
+      <form (ngSubmit)="onSubmit(tecnoForm.value)" #tecnoForm="ngForm">
+        
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre"
+                 required
+                 [(ngModel)]="model.nombre" name="nombre">
+        </div>
+
+        
+
+        <div class="form-group">
+          <label for="imagen">Tenologia Imagen</label>
+          <select class="form-control"  id="imagen"
+                  required
+                  [(ngModel)]="model.imagen" name="imagen">
+            <option *ngFor="let imagen of imagenes" [value]="imagen">{{imagen}}</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+
+      </form>
+  </div>
