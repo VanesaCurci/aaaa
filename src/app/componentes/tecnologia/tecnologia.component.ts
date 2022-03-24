@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tecnologia',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TecnologiaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-
+edit(){
+this.router.navigate(['addtecno'])
+}
 }
