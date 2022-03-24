@@ -22,8 +22,8 @@ export class TecnologiaServiceService {
     return this.http.post<Tecnologia>(this.tecnologiaUrl,tecnologia);
   }
 
-  deleteTecnologia(tecnologia:Tecnologia): Observable<Tecnologia> {
-    const url = `${this.tecnologiaUrl}/borrar/${tecnologia.id}`
+  deleteTecnologia(id:number): Observable<Tecnologia> {
+    const url = `${this.tecnologiaUrl}/borrar/${id}`
     return this.http.delete<Tecnologia>(url);
   }
 

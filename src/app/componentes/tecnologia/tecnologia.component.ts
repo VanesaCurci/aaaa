@@ -22,6 +22,10 @@ export class TecnologiaComponent implements OnInit {
     .subscribe(tecnologias => this.tecnologias = tecnologias);
   }
 
+  delete(tecnologia:Tecnologia): void {
+    this.tecnologias = this.tecnologias.filter(t => t !== tecnologia);
+    this.tecnologiaService.deleteTecnologia(tecnologia.id).subscribe();
+  }
  
 
 edit(){

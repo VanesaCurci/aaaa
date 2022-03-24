@@ -1,6 +1,7 @@
 <div class="container">
     <div class="card" >
       <h1>Tecnologías</h1>
+      <i class="fa fa-plus"></i>
         <h2 class="card-body">
           <ul  *ngFor = "let tecnologia of tecnologias" >
             <li class="card-title">
@@ -13,7 +14,7 @@
                <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>   
             </li>
             <li>
-               <i class="fa fa-trash-o" aria-hidden="true"></i>
+               <i class="fa fa-trash-o" aria-hidden="true" (click)="delete(tecnologia)"></i>
             </li>
          </ul>
         </h2>
