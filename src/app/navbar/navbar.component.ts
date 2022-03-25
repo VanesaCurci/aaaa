@@ -12,13 +12,5 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-click(){
-  this.router.navigate(["inicio"])
-}
-iClick(){
-  this.router.navigate(["informacion"])
-}
-cClick(){
-  this.router.navigate(["contacto"])
-}
+
 }

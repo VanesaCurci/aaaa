@@ -27,6 +27,16 @@ export class TecnologiaServiceService {
     return this.http.delete<Tecnologia>(url);
   }
 
+  getTecnologia(id: number): Observable<Tecnologia> {
+    const url = `${this.tecnologiaUrl}/${id}`;
+    return this.http.get<Tecnologia>(url)
+  }
+
+  updateTecnologia(tecnologia:Tecnologia): Observable<Tecnologia> {
+    const url = `${this.tecnologiaUrl}/${tecnologia.id}?nombre=${tecnologia.nombre}&imagen=${tecnologia.imagen}`;
+    return this.http.put<Tecnologia>(url,tecnologia) 
+  }
+
   
 
 }

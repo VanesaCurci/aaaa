@@ -1,1 +1,15 @@
-<p>edittecno works!</p>
+<div *ngIf="tecnologia">
+    <h2>{{tecnologia.nombre | uppercase}} </h2>
+    <div><span>id: </span>{{tecnologia.id}}</div>
+    <div>
+      <label for="tecnologia-nombre">Tecnología : </label>
+      <input id="tecnologia-nombre" [(ngModel)]="tecnologia.nombre" placeholder="nombre"/>
+    </div>
+    <div>
+        <label for="tecnologia-imagen">Logo: </label>
+        <input id="tecnologia-imagen" [(ngModel)]="tecnologia.imagen" placeholder="Imagen"/>
+    </div>
+    <button type="button" (click)="goBack()">go back</button>
+    <button type="button" (click)="save()">save</button>
+  </div>
+  

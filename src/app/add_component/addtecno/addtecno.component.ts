@@ -1,9 +1,8 @@
 import { Component, OnInit, } from '@angular/core';
+import { Router } from '@angular/router';
 import { Tecnología } from 'src/app/clases/Tecnologia';
 import { Tecnologia } from 'src/app/interfaces/tecnologia';
 import { TecnologiaServiceService } from 'src/app/servicios/tecnologia-service.service';
-
-
 
 
 @Component({
@@ -14,7 +13,10 @@ import { TecnologiaServiceService } from 'src/app/servicios/tecnologia-service.s
 export class AddtecnoComponent implements OnInit{
 tecnologias:Tecnologia[]=[]
 
-constructor(private service:TecnologiaServiceService){}
+constructor(
+private service:TecnologiaServiceService, 
+private router:Router
+){}
 ngOnInit(): void {
 }
 
@@ -25,17 +27,16 @@ ngOnInit(): void {
 
   model = new Tecnología(0,'', '');
 
-  submitted = false;
+  
 
-  onSubmit(values: any): void { this.submitted = true;
-  console.log('Form values', values)
+  onSubmit(values: any): void { 
     this.service.addTecnologia(values).subscribe((tecnologia)=> (
-      this.tecnologias.push(tecnologia)
+      this.tecnologias.push(tecnologia) 
     ))
+    this.router.navigate(['informacion'])
   }
   
   
 
   }
-
   
