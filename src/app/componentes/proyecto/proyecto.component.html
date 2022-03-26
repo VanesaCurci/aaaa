@@ -1,7 +1,12 @@
 <div class="container">
-    <div class="card">
-      <h1>Proyectos</h1>
-      <p>Crud con Angular + Java Spring Boot + MySQL</p>
-    </div>   
+  <div class="card">
+    <ul *ngFor="let proyecto of proyectos">
+      <li class="card-title">
+        <h1>{{proyecto.titulo}}</h1>
+      </li>
+      <li>
+        <p>{{proyecto.descripcion}}</p>
+      </li>
+    </ul>
+  </div>   
 </div>
-
