@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
 import { Tecnologia } from 'src/app/interfaces/tecnologia';
 import { TecnologiaServiceService } from 'src/app/servicios/tecnologia-service.service';
 
@@ -10,12 +9,9 @@ import { TecnologiaServiceService } from 'src/app/servicios/tecnologia-service.s
 })
 export class TecnologiaComponent implements OnInit {
   tecnologias: Tecnologia[] = [];
-  tecnologia: Tecnologia | undefined;
-
+  
   constructor(
     private tecnologiaService:TecnologiaServiceService,
-    private router: Router,
-    private route: ActivatedRoute,
     ) { }
 
   ngOnInit(): void {

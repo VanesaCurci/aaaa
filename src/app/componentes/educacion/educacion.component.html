@@ -1,8 +1,15 @@
 <div class="container">
     <div class="card">
-      <h1>Educación</h1>
-      <p> Web Full Stack developer</p>
-      <p>Curso Argentina Programa</p>
-      <p>7 meses</p>
+      <ul *ngFor="let educacion of educaciones">
+        <li class="card-title">
+          <h1>{{educacion.titulo}}</h1>
+        </li>
+        <li>
+          <p>{{educacion.lugar}}</p>
+        </li>
+        <li>
+          <p>{{educacion.lugar}}</p>
+        </li>
+      </ul>
     </div>   
 </div>
