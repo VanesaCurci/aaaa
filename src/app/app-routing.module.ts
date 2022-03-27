@@ -12,6 +12,7 @@ import { ContactoComponent } from './vistas/contacto/contacto.component';
 import { InformacionComponent } from './vistas/informacion/informacion.component';
 import { InicioComponent } from './vistas/inicio/inicio.component';
 
+
 const routes: Routes = [
   {path:'inicio', component: InicioComponent},
   {path:'informacion', component: InformacionComponent},
