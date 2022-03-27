@@ -1,1 +1,15 @@
-<p>editidio works!</p>
+<div *ngIf="idioma">
+    <h2>{{idioma.nombre | uppercase}} </h2>
+    <div><span>id: </span>{{idioma.id}}</div>
+    <div>
+      <label for="idioma-nombre">Idioma : </label>
+      <input id="idioma-nombre" [(ngModel)]="idioma.nombre" placeholder="idioma"/>
+    </div>
+    <div>
+        <label for="idioma-nivel">Logo: </label>
+        <input id="idioma-nivel" [(ngModel)]="idioma.nivel" placeholder="nivel"/>
+    </div>
+    <button type="button" (click)="goBack()">go back</button>
+    <button type="button" (click)="save()">save</button>
+  </div>
+  

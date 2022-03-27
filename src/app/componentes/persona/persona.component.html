@@ -1,19 +1,20 @@
 <div class="container">
-  <div class="card" >
-    <img class="card-img-top " src="./assets/fondo_perfil_flower.jpeg" alt="Card image" >
+  <div class="card" *ngFor="let persona of personas">
+    <img class="card-img-top " src="./assets/{{persona.foto_fondo}}" alt="Card image" >
     <div class="card-img-overlay">
-       <img class="img-fluid rounded-circle" src="./assets/profile.jpg" alt="perfil" >
+       <img class="img-fluid rounded-circle" src="./assets/{{persona.foto_perfil}}" alt="perfil" >
     </div>
-    <ul *ngFor="let persona of personas">
-      <li >
-        
-          <h1>{{persona.nombre}}</h1>
-          <h2>{{persona.apellido}}</h2>
-          <h2>{{persona.edad}}</h2>
-      </li>
-    </ul>
-    
-    
+    <div class="card-body">
+      <h1>
+         {{persona.nombre + " " + persona.apellido}}
+      </h1>
+      <h3 *ngFor="let localidad of localidades">
+        {{localidad.nombre}},
+      </h3>
+      <h3 *ngFor="let provincia of provincias">
+        {{provincia.nombre}}
+      </h3>
+    </div> 
   </div>
 </div>
     

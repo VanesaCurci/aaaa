@@ -1,18 +1,18 @@
-div {
+.container {
     padding-top:100px 20px 100px 20px;
-    margin-top: 20px;
-    margin-bottom:20px;
+    margin-top: 80px;
+    margin-bottom:70px;
     border: #3B5998 solid;
     background-color:#D4E6F1;
     
 }
 
 .fa {
-    padding: 50px;
+    padding: 30px;
     font-size: 50px;
     text-align: center;
     text-decoration: none;
-    margin: 10px 10px;
+    margin: 30px 30px;
     border-radius: 20%;
     
   }
@@ -56,11 +56,18 @@ div {
       padding: 50px 50px 5px 50px;
       margin-top:30px;
       margin-bottom:30px;
-      margin-left:250px;
+      margin-left:30px;
       
   }
   li{
       list-style-type: none;
       
       
+  }
+
+  p{
+    font-size:20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 25px
+
   }

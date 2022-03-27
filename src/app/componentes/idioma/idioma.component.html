@@ -1,16 +1,22 @@
 <div class="container">
   <div class="card">
-    <div class="card-body">
-      <h1 class="card-title">Idiomas</h1>
-      <ul *ngFor="let idioma of idiomas">
-        <li class="progress">
+    <h1 class="card-title">Idiomas</h1>
+      <a routerLink="/addidi">
+        <i class="fa fa-plus"></i>
+      </a>
+      
+        <div class="progress" *ngFor="let idioma of idiomas">
           <div class="progress-bar progress-bar-striped progress-bar-animated" 
           [style.width.%]="idioma.nivel">
             {{idioma.nombre}}
           </div>
-        </li>
-        <br>
-      </ul>
-    </div>
+        </div>
+        <div *ngFor="let idioma of idiomas">
+        <a routerLink="/editidi/{{idioma.id}}">
+          <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>  
+        </a>
+         <i class="fa fa-trash-o" aria-hidden="true" (click)="delete(idioma)"></i>
+        </div>
   </div>
+</div>
   

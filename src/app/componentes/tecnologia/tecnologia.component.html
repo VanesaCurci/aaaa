@@ -4,25 +4,24 @@
       <a routerLink="/addtecno">
       <i class="fa fa-plus"></i>
       </a>
-        <h2 class="card-body">
+        <div class="card-body">
           <ul  *ngFor = "let tecnologia of tecnologias" >
-            <li class="card-title">
-            {{tecnologia.nombre }}
-            </li> 
             <li class="card-img" >
-                <img src="./assets/{{tecnologia.imagen}}" alt="logo">
+              <img src="./assets/{{tecnologia.imagen}}" alt="logo">
             </li>
             <li>
-              
               <a routerLink="/edittecno/{{tecnologia.id}}">
                 <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>  
               </a>
-
             </li>
             <li>
                <i class="fa fa-trash-o" aria-hidden="true" (click)="delete(tecnologia)"></i>
             </li>
-         </ul>
-        </h2>
+            <li class="card-title">
+              {{tecnologia.nombre }}
+            </li> 
+          </ul>
+        </div>
   </div>
 </div>
+

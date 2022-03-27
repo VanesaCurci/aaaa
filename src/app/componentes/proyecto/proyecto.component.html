@@ -1,12 +1,16 @@
 <div class="container">
   <div class="card">
-    <ul *ngFor="let proyecto of proyectos">
-      <li class="card-title">
-        <h1>{{proyecto.titulo}}</h1>
-      </li>
-      <li>
-        <p>{{proyecto.descripcion}}</p>
-      </li>
-    </ul>
+    <h1>Proyectos</h1>
+    <a routerLink="/addproye">
+      <i class="fa fa-plus"></i>
+    </a>
+    <div *ngFor="let proyecto of proyectos">
+        <h2>{{proyecto.titulo}}</h2>
+        <a routerLink="/editproye/{{proyecto.id}}">
+          <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>  
+        </a>
+         <i class="fa fa-trash-o" aria-hidden="true" (click)="delete(proyecto)"></i>
+        <h3>{{proyecto.descripcion}}</h3> 
+    </div>
   </div>   
 </div>

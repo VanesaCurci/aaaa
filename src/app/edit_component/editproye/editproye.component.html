@@ -1,1 +1,15 @@
-<p>editproye works!</p>
+<div *ngIf="proyecto">
+    <h2>{{proyecto.titulo | uppercase}} </h2>
+    <div><span>id: </span>{{proyecto.id}}</div>
+    <div>
+      <label for="proyecto-titulo">Título : </label>
+      <input id="proyecto-titulo" [(ngModel)]="proyecto.titulo" placeholder="titulo"/>
+    </div>
+    <div>
+        <label for="proyecto-descripcion">Descripción: </label>
+        <input id="proyecto-descripcion" [(ngModel)]="proyecto.descripcion" placeholder="Descripcion"/>
+    </div>
+    <button type="button" (click)="goBack()">go back</button>
+    <button type="button" (click)="save()">save</button>
+  </div>
+  

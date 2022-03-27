@@ -20,10 +20,9 @@ private router:Router
 ngOnInit(): void {
 }
 
-
-
-  imagenes = ['html_logo.png', 'java_logo.jpg',
-            'JavaScript-logo.jpg', 'logo_angular.jpg'];
+  imagenes = ['Angular.jpg', 'CSS.jpg','delfín.jpg','front-end.jpg','Github.jpg',
+            'go.jpg', 'HTML.jpg','JavaScript.jpg','MySQL.jpg', 'phython.jpg',
+             'postman.jpg', 'spring-jpg', 'SpringBoot.jpg'];
 
   model = new Tecnología(0,'', '');
 

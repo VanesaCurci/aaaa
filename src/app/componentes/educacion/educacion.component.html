@@ -1,15 +1,17 @@
 <div class="container">
     <div class="card">
-      <ul *ngFor="let educacion of educaciones">
-        <li class="card-title">
-          <h1>{{educacion.titulo}}</h1>
-        </li>
-        <li>
-          <p>{{educacion.lugar}}</p>
-        </li>
-        <li>
-          <p>{{educacion.lugar}}</p>
-        </li>
-      </ul>
+      <h1>Educación</h1>
+        <a routerLink="/addedu">
+        <i class="fa fa-plus"></i>
+        </a>
+        <div class="card-title" *ngFor="let educacion of educaciones">
+          <h2>{{educacion.titulo}}</h2>
+          <a routerLink="/editedu/{{educacion.id}}">
+            <i class="fa fa-pencil" aria-hidden="true"></i> 
+          </a>
+          <i class="fa fa-trash-o" aria-hidden="true" (click)="delete(educacion)"></i>
+          <h3>{{educacion.lugar}}</h3>
+          <h3>{{educacion.duracion}}</h3>
+        </div>
     </div>   
 </div>

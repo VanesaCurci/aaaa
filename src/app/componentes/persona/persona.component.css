@@ -5,9 +5,8 @@
     
 }
 
-
 .card-img-overlay {
-    padding-top: 400px;
+    padding-top: 220px;
 }
 .card-body {
     margin-top: 10px;
@@ -15,17 +14,14 @@
 
 .card-img-top{
     width:auto ;
-    height:500px ;
+    height:300px ;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
 
 h1{
-    padding-top:40px
+    padding-top:40px;
+    
 }
-ul{
-    padding-top: 100px;
-}
-li{
-    list-style-type: none;
-}
+
+

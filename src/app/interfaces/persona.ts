@@ -4,5 +4,5 @@ export interface Persona {
     apellido:string;
     edad:number;
     foto_perfil:string;
-    foto_fondo:string     
+    foto_fondo:string;  
 }

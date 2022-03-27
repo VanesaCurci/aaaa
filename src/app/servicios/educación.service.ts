@@ -31,9 +31,7 @@ export class EducaciónService {
   }
 
   updateEducación(educacion:Educación): Observable<Educación> {
-    const url = `${this.educaciónUrl}/${educacion.id}?
-    título=${educacion.titulo}&lugar=${educacion.lugar}
-    &duración=${educacion.duracion}`;
+    const url = `${this.educaciónUrl}/${educacion.id}?titulo=${educacion.titulo}&lugar=${educacion.lugar}&duracion=${educacion.duracion}`;
     return this.http.put<Educación>(url,educacion) 
   }
 }

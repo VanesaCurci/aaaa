@@ -1,1 +1,19 @@
-<p>editedu works!</p>
+<div *ngIf="educacion">
+    <h2>{{educacion.titulo | uppercase}} </h2>
+    <div><span>id: </span>{{educacion.id}}</div>
+    <div>
+      <label for="educacion-titulo">Título/profesión : </label>
+      <input id="educacion-titulo" [(ngModel)]="educacion.titulo" placeholder="título"/>
+    </div>
+    <div>
+        <label for="educacion-lugar">Lugar de estudios: </label>
+        <input id="educacion-lugar" [(ngModel)]="educacion.lugar" placeholder="lugar"/>
+    </div>
+    <div>
+        <label for="educacion-duracion">Duración de estudios: </label>
+        <input id="educacion-duracion" [(ngModel)]="educacion.duracion" placeholder="duracion"/>
+    </div>
+    <button type="button" (click)="goBack()">go back</button>
+    <button type="button" (click)="save()">save</button>
+  </div>
+  
