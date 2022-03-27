@@ -1,5 +1,5 @@
 ul {
-    padding: 30px;
+    padding: 5px;
     background-color: #b3cee2 ;
     font-family: "Times New Roman" ;
     list-style-type: none;
@@ -13,8 +13,9 @@ li {
 
 .card-title {
     text-align: left;
-    margin-left: 70px;
-    padding: 30px
+    margin-left: 80px;
+    padding: 30px;
+    font-size: 30px;
 }
 
 

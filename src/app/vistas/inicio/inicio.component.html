@@ -1,5 +1,7 @@
 
 <div class="container">   
-    <h1 class="card-title">Vanesa<br>Curci</h1>       
+    <h1 class="card-title" *ngFor="let persona of personas">
+        {{persona.nombre}}<br>{{persona.apellido}}
+    </h1>       
 </div>
   

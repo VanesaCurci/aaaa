@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Persona } from 'src/app/interfaces/persona';
+import { PersonaServiceService } from 'src/app/servicios/persona-service.service';
 
 @Component({
   selector: 'app-inicio',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent implements OnInit {
-
-  constructor() { }
+  personas:Persona[]=[]
+  
+  constructor(private personaService:PersonaServiceService) { }
 
   ngOnInit(): void {
+    this.getPersonas()
   }
 
+  getPersonas(): void {
+    this.personaService.getPersonas()
+    .subscribe(personas => this.personas = personas);
+  }
 }
+
+

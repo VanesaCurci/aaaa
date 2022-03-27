@@ -1,9 +1,8 @@
 .container {
-    padding-top:100px 20px 100px 20px;
     margin-top: 80px;
     margin-bottom:70px;
-    border: #3B5998 solid;
-    background-color:#D4E6F1;
+    border:#154360 solid;
+    background-color:#A9CCE3;
     
 }
 
@@ -68,6 +67,9 @@
   p{
     font-size:20px;
     font-family: 'Courier New', Courier, monospace;
-    padding: 25px
+    padding: 40px
 
   }
+
+
+  

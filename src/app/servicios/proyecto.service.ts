@@ -31,8 +31,7 @@ export class ProyectoService {
   }
 
   updateProyecto(proyecto:Proyecto): Observable<Proyecto> {
-    const url = `${this.proyectoUrl}/${proyecto.id}?
-    titulo=${proyecto.titulo}&descripcion=${proyecto.descripcion}`;
+    const url = `${this.proyectoUrl}/${proyecto.id}?titulo=${proyecto.titulo}&descripcion=${proyecto.descripcion}`;
     return this.http.put<Proyecto>(url,proyecto) 
   }
 }
